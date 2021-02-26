@@ -90,9 +90,9 @@ unaryOperator
     ;
 
 castExpression
-    :   '(' typeName ')' castExpression
+    :   unaryExpression
+    |   '(' typeName ')' castExpression
     |   '__extension__' '(' typeName ')' castExpression
-    |   unaryExpression
     |   DigitSequence // for
     ;
 
